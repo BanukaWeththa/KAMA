@@ -77,7 +77,7 @@
 }
 
 .navbar-doublerow .navbar-down ul{
-padding-left: 10%;
+padding-left: 5%;
 }
 .navbar-top{
     background: black;
@@ -105,4 +105,7 @@ padding-left: 10%;
 }
 #p:hover{
     text-decoration: none;
+}
+#nav-mobile{
+    width: 60%;
 }

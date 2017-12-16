@@ -31,8 +31,10 @@
                     </ul>
 
                     <ul class="nav navbar-nav pull-right tb2">
-                        <li><a href="#" class="text-white" style="font-size: 16px;font-family: monospace;">Login</a></li>
-                        <li><a href="#" class="text-white cartI" style="font-size: 16px;font-family: monospace;"><i class="material-icons">shopping_cart</i> </a></li> 
+                        <li><a href="login_register.jsp" class="text-white cartI" style="font-size: 16px;font-family: monospace;margin-top: 0px;"><i class="material-icons right" style="line-height: 20px;">person</i>Login/Register</a></li> 
+                        <li><a href="#" class="text-white cartI" style="font-size: 16px;font-family: monospace;margin-top: 0px;"><i class="material-icons right" style="line-height: 20px;">shopping_cart</i>Cart</a></li> 
+
+
                     </ul>
                 </div>
             </nav>
@@ -42,19 +44,23 @@
                 <div class="container">
                     <div class="flex-container">  
                         <ul class="nav navbar-nav flex-item hidden-xs">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="index.jsp"><i class="material-icons right" style="line-height: 20px;">home</i>Home</a></li>
+                            <li><a href="#"><i class="material-icons right" style="line-height: 20px;">settings</i>About Us</a></li>
+                            <li><a href="#"><i class="material-icons right" style="line-height: 20px;">redeem</i>Products</a></li>
+                            <li><a href="#"><i class="material-icons right" style="line-height: 20px;">call</i>Contact Us</a></li>
 
                         </ul>
 
                         <ul id="nav-mobile" class="side-nav">
-                            <li><a data-activates="nav-mobile" class="button-collapse" id="p" href="#"><i class="material-icons">close</i></a></li>
-                            <li><a id="p" href="#">Home</a></li>
-                            <li><a id="p" href="#">About Us</a></li>
-                            <li><a id="p" href="#">Products</a></li>
-                            <li><a id="p" href="#">Contact Us</a></li>
+
+
+
+                            <li><a id="p" href="#"><i class="material-icons right" style="line-height: 50px;">person</i>Login/Register</a></li>
+                            <li><a id="p" href="#"><i class="material-icons right" style="line-height: 50px;">home</i>Home</a></li>
+                            <li><a id="p" href="#"><i class="material-icons right" style="line-height: 50px;">settings</i>About Us</a></li>
+                            <li><a id="p" href="#"><i class="material-icons right" style="line-height: 50px;">redeem</i>Products</a></li>
+                            <li><a id="p" href="#"><i class="material-icons right" style="line-height: 50px;">call</i>Contact Us</a></li>
+
                         </ul>
                         <a style="margin-left: -4%;" href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 
