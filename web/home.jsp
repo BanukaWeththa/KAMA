@@ -68,8 +68,7 @@
         </header>    
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="Material/js/materialize.js"></script>
-        <script src="JS/index_js.js"></script>
+        <script src="JS/index_js.js"></script>     
 
-        <h1></h1>
     </body>
 </html>
