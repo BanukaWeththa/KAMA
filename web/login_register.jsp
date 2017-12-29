@@ -10,17 +10,29 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        
+        <link href="CSS/login_register.css" type="text/css" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="Material/css/materialize.css">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet" id="bootstrap-css">
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <title>JSP Page</title>
+        <style>
+            <jsp:include page="CSS/index_css.css"/>
+            <jsp:include page="CSS/footer.css"/>
+        </style>
     </head>
     <body>
+        <jsp:include page="nav.jsp"/>
+
         <div class="space-medium">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="account-holder">
-                            <!--login-form-->
-                            <h3>Login to Today’s Fashion</h3>
+
+                            <h3>Login to PicPick</h3>
                             <br>
                             <div class="social-btn">
                                 <h6>Sign in With</h6>
@@ -50,7 +62,7 @@
                                         <button class="btn btn-primary btn-block">Login</button>
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" value="">
+                                                <input type="checkbox" value="" style="opacity: 100;">
 
                                                 <p>Remember Me?</p>
                                             </label>
@@ -61,11 +73,10 @@
                             </div>
                         </div>
                     </div>
-                    <!--/.login-form-->
-                    <!--sing-up-form-->
+
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="account-holder">
-                            <h3>Signup With Today’s Fashion</h3>
+                            <h3>Signup With PicPick</h3>
                             <br>
                             <div class="social-btn">
                                 <h6>Sign up With</h6>
@@ -77,11 +88,17 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <form>
+                                <form id="registerform">
                                     <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
                                         <div class="form-group">
-                                            <label class="control-label required" for="name"> Name<sup style="color:red">*</sup></label>
-                                            <input id="name" name="name" type="text" class="form-control" placeholder="Enter Your NAme">
+                                            <label class="control-label required" for="firstname">First Name<sup style="color:red">*</sup></label>
+                                            <input id="firstname" name="firstname" type="text" class="form-control" placeholder="Enter First Your Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            <label class="control-label required" for="lastname">Last Name<sup style="color:red">*</sup></label>
+                                            <input id="lastname" name="lastname" type="text" class="form-control" placeholder="Enter Your Last Name">
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
@@ -113,13 +130,14 @@
                         </div>
 
                     </div>
-                    <!--/.sing-up-form-->
-                    Created by <a href="https://goo.gl/aiZCwf" target="_blank">easetemplate</a>
+
                 </div>
 
             </div>
         </div>
-    </div>
-    <!--/.forms-->
-</body>
+
+        <jsp:include page="footer.jsp"/>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.js"></script>
+    </body>
 </html>

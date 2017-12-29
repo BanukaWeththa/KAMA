@@ -10,68 +10,40 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <link type="text/css" rel="stylesheet" href="CSS/home.css">
         <link type="text/css" rel="stylesheet" href="CSS/index_css.css">
         <link type="text/css" rel="stylesheet" href="Material/css/materialize.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            <jsp:include page="CSS/index_css.css"/>
+            <jsp:include page="CSS/footer.css"/>
+        </style>
     </head>
     <body>
 
-        <nav class="navbar navbar-default navbar-doublerow navbar-trans navbar-fixed-top">
-
-            <nav class="navbar navbar-top hidden-xs">
-                <div class="container">
-
-                    <ul class="nav navbar-nav pull-left tb1">
-                        <li><a href="#"><i class="fa fa-facebook-official fa-2x"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
-                        <li><a href="#"><i class="fa fa fa-twitter fa-2x"></i></a></li>
-                        <li><a href="#"><span class="text-white" style="font-size: 16px;font-family: monospace;">CALL: <b>+94 112 561 489</b> </span></a></li>
-                    </ul>
-
-                    <ul class="nav navbar-nav pull-right tb2">
-                        <li><a href="login_register.jsp" class="text-white cartI" style="font-size: 16px;font-family: monospace;margin-top: 0px;"><i class="material-icons right" style="line-height: 20px;">person</i>Login/Register</a></li> 
-                        <li><a href="#" class="text-white cartI" style="font-size: 16px;font-family: monospace;margin-top: 0px;"><i class="material-icons right" style="line-height: 20px;">shopping_cart</i>Cart</a></li> 
+        <jsp:include page="nav.jsp"/>
 
 
-                    </ul>
-                </div>
-            </nav>
+        <div class="carousel carousel-slider center" data-indicators="true">
+            <div class="carousel-fixed-item center">
+                <a class="btn waves-effect white grey-text darken-text-2">button</a>
+            </div>
+            <div class="carousel-item red white-text" href="#one!">
 
+            </div>
+            <div class="carousel-item amber white-text" href="#two!">
 
-            <nav class="navbar navbar-down">
-                <div class="container">
-                    <div class="flex-container">  
-                        <ul class="nav navbar-nav flex-item hidden-xs">
-                            <li><a href="index.jsp"><i class="material-icons right" style="line-height: 20px;">home</i>Home</a></li>
-                            <li><a href="#"><i class="material-icons right" style="line-height: 20px;">settings</i>About Us</a></li>
-                            <li><a href="#"><i class="material-icons right" style="line-height: 20px;">redeem</i>Products</a></li>
-                            <li><a href="#"><i class="material-icons right" style="line-height: 20px;">call</i>Contact Us</a></li>
+            </div>
+            <div class="carousel-item green white-text" href="#three!">
 
-                        </ul>
+            </div>
+            <div class="carousel-item blue white-text" href="#four!">
 
-                        <ul id="nav-mobile" class="side-nav">
+            </div>
+        </div>
 
-
-
-                            <li><a id="p" href="#"><i class="material-icons right" style="line-height: 50px;">person</i>Login/Register</a></li>
-                            <li><a id="p" href="#"><i class="material-icons right" style="line-height: 50px;">home</i>Home</a></li>
-                            <li><a id="p" href="#"><i class="material-icons right" style="line-height: 50px;">settings</i>About Us</a></li>
-                            <li><a id="p" href="#"><i class="material-icons right" style="line-height: 50px;">redeem</i>Products</a></li>
-                            <li><a id="p" href="#"><i class="material-icons right" style="line-height: 50px;">call</i>Contact Us</a></li>
-
-                        </ul>
-                        <a style="margin-left: -4%;" href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-
-                    </div>  
-                </div>
-            </nav>
-        </nav> 
-
-        <header>
-            <img src="https://images.unsplash.com/photo-1467709757686-06cbdd818d90?auto=format&fit=crop&w=666&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" style="width:100%">
-        </header>    
+        <jsp:include page="footer.jsp"/>
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="Material/js/materialize.js"></script>
         <script src="JS/index_js.js"></script>     

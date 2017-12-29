@@ -29,7 +29,14 @@ a:focus, a:hover { text-decoration: none; color: #f25b6a; }
 .btn-primary { background-color: #f25b6a; color: #fff; }
 .btn-primary:hover { background-color: #e14e5c; color: #fff; }
 
+#btnview:hover{
+    background-color: #e14e5c; color: #fff;
+}
 
+#btnview{
+    background-color: #f25b6a; color: #fff;
+    font-family: 'Hind Siliguri', sans-serif; font-size: 15px; text-transform: uppercase; font-weight: 600; padding: 25px 24px; margin-bottom: 4px; letter-spacing: 2.2px; border-radius: 0px; line-height:0; border: transparent; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; word-wrap: break-word; white-space: normal !important;
+}
 /*----------------------- 
    Form Elements:
 -------------------------*/
@@ -44,3 +51,12 @@ label { }
 input[type=checkbox], input[type=radio] { margin: 8px 0 0; margin-top: 1px\9; line-height: normal; }
 input::-webkit-input-placeholder { color: #595857 !important; }
 textarea::-webkit-input-placeholder { color: #595857 !important; }
+.mb30{
+    margin-bottom: 4%;
+}
+.mb30 p>a{
+color: black;
+}
+.mb30 p>a:hover{
+color: #DF4F5E;
+}

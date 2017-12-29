@@ -5,4 +5,40 @@
 	font-size: inherit;
 }
 
+.navbar{
+  position:fixed;
+  width:100%;
+  background-color:#fff;
+  z-index:10;
+  border-radius:0;
+  border-color:transparent;
+}
 
+body{
+    font-family: 'Merriweather Sans', sans-serif;
+    
+}
+.navbar ul > li > a{
+
+color: #878787;
+}
+.navbar ul > li > a:hover{
+background-color: transparent;
+color: #878787;
+}
+
+
+.navbar ul> li:hover{
+    margin-bottom: -5%;
+    border-bottom: 4px solid #8bc34a;
+}
+
+.navbar-default{
+    border-color: #686868;
+    border-bottom-color: transparent; 
+    border-top-color: transparent; 
+    border-left-color: transparent; 
+    border-right-color: transparent; 
+    height: 75px;
+    
+}
