@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 5, 2018 12:55:53 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="POJOS.UserSpecification" table="userSpecification" catalog="PicPick">
+        <id name="iduserSpecification" type="int">
+            <column name="iduserSpecification" />
+            <generator class="assigned" />
+        </id>
+        <property name="userSpecificationName" type="string">
+            <column name="userSpecificationName" length="200" />
+        </property>
+        <property name="userSpecificationcol" type="string">
+            <column name="userSpecificationcol" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 5, 2018 12:55:53 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="POJOS.PrinterHasProduct" table="printer_has_product" catalog="PicPick">
+        <id name="printerHasProductid" type="java.lang.Integer">
+            <column name="printer_has_productid" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="productStatus" class="POJOS.ProductStatus" fetch="select">
+            <column name="product_status_idproduct_status" not-null="true" />
+        </many-to-one>
+        <many-to-one name="userLogin" class="POJOS.UserLogin" fetch="select">
+            <column name="user_login_iduser_login" not-null="true" />
+        </many-to-one>
+        <many-to-one name="product" class="POJOS.Product" fetch="select">
+            <column name="product_idproduct" not-null="true" />
+        </many-to-one>
+        <property name="price" type="double">
+            <column name="price" precision="22" scale="0" not-null="true" />
+        </property>
+        <set name="cartItems" table="cartItem" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="printer_has_product_printer_has_productid" not-null="true" />
+            </key>
+            <one-to-many class="POJOS.CartItem" />
+        </set>
+    </class>
+</hibernate-mapping>

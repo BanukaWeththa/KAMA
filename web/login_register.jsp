@@ -1,7 +1,7 @@
 <%-- 
-    Document   : newjsp
-    Created on : Dec 16, 2017, 7:01:14 PM
-    Author     : taKUna
+   Document   : newjsp
+   Created on : Dec 16, 2017, 7:01:14 PM
+   Author     : taKUna
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -22,6 +22,7 @@
             <jsp:include page="CSS/index_css.css"/>
             <jsp:include page="CSS/footer.css"/>
         </style>
+      
     </head>
     <body>
         <jsp:include page="nav.jsp"/>
@@ -47,14 +48,14 @@
                                 <form>
                                     <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
                                         <div class="form-group">
-                                            <label class="control-label required" for="email">Email<sup style="color:red">*</sup></label>
-                                            <input id="email" name="email" type="text" class="form-control" placeholder="Enter Email Address">
+                                            <label class="control-label required" for="logemail">Email<sup style="color:red">*</sup></label>
+                                            <input id="logemail" name="logemail" type="text" class="form-control" placeholder="Enter Email Address">
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
                                         <div class="form-group">
                                             <label class="control-label required" for="email">Password<sup style="color:red">*</sup></label>
-                                            <input id="password" name="password" type="password" class="form-control" placeholder="password">
+                                            <input id="logpassword" name="logpassword" type="password" class="form-control" placeholder="password">
                                         </div>
                                         <a href="#" class="forgot-password">Forgot Password?</a>
                                     </div>
@@ -88,17 +89,17 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <form id="registerform">
+                                <form id="registerform" method="POST" action="login_register">
                                     <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
                                         <div class="form-group">
                                             <label class="control-label required" for="firstname">First Name<sup style="color:red">*</sup></label>
-                                            <input id="firstname" name="firstname" type="text" class="form-control" placeholder="Enter First Your Name">
+                                            <input id="firstName" name="firstName" type="text" class="form-control" placeholder="Enter First Your Name">
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
                                         <div class="form-group">
                                             <label class="control-label required" for="lastname">Last Name<sup style="color:red">*</sup></label>
-                                            <input id="lastname" name="lastname" type="text" class="form-control" placeholder="Enter Your Last Name">
+                                            <input id="lastName" name="lastName" type="text" class="form-control" placeholder="Enter Your Last Name">
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
@@ -111,12 +112,17 @@
                                         <div class="form-group">
                                             <label class="control-label required" for="email">Email<sup style="color:red">*</sup></label>
                                             <input id="email" name="email" type="text" class="form-control" placeholder="Enter Email Address">
-                                        </div>
+
+                                    </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
                                         <div class="form-group">
                                             <label class="control-label required" for="password">Password<sup style="color:red">*</sup></label>
-                                            <input id="password" name="password" type="password" class="form-control" placeholder="password">
+                                            <input id="password" name="password" type="password" class="form-control" placeholder="Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label required" for="repassword">Re-enter Password<sup style="color:red">*</sup></label>
+                                            <input id="repassword" name="repassword" type="password" class="form-control" placeholder="Re-enter password">
                                         </div>
                                         <div class="mb30">
                                             <p>Already have an account?   <a href="#">Login</a></p>
@@ -139,5 +145,7 @@
         <jsp:include page="footer.jsp"/>
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/additional-methods.min.js"></script>
+        <script src="JS/Validation/validation.js"></script>
     </body>
 </html>

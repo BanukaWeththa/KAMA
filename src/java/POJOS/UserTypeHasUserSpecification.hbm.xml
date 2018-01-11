@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 5, 2018 12:55:53 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="POJOS.UserTypeHasUserSpecification" table="user_type_has_userSpecification" catalog="PicPick">
+        <id name="iduserTypeHasUserSpecification" type="java.lang.Integer">
+            <column name="iduser_type_has_userSpecification" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="userType" class="POJOS.UserType" fetch="select">
+            <column name="user_type_iduser_type" not-null="true" />
+        </many-to-one>
+        <many-to-one name="userLogin" class="POJOS.UserLogin" fetch="select">
+            <column name="user_login_iduser_login" not-null="true" />
+        </many-to-one>
+        <property name="userSpecificationIduserSpecification" type="int">
+            <column name="userSpecification_iduserSpecification" not-null="true" />
+        </property>
+        <property name="value" type="string">
+            <column name="value" length="500" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

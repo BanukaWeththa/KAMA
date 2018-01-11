@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 5, 2018 12:55:53 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="POJOS.AreaPrice" table="areaPrice" catalog="PicPick">
+        <id name="idareaPrice" type="java.lang.Integer">
+            <column name="idareaPrice" />
+            <generator class="identity" />
+        </id>
+        <property name="zipCodeIdzipCode" type="int">
+            <column name="zipCode_idzipCode" not-null="true" />
+        </property>
+        <property name="areaPriceAmount" type="double">
+            <column name="areaPriceAmount" precision="22" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

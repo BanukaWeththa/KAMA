@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 5, 2018 12:55:53 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="POJOS.Complaint" table="complaint" catalog="PicPick">
+        <id name="idcomplaint" type="int">
+            <column name="idcomplaint" />
+            <generator class="assigned" />
+        </id>
+        <property name="complaintSubjectIdcomplaintSubject" type="int">
+            <column name="complaintSubject_idcomplaintSubject" not-null="true" />
+        </property>
+        <property name="complaintDescription" type="string">
+            <column name="complaintDescription" length="500" />
+        </property>
+        <set name="complaintSubjectSpecComplaintSubjectComplaints" table="complaintSubjectSpec_complaintSubject_complaint" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="complaint_idcomplaint" not-null="true" />
+            </key>
+            <one-to-many class="POJOS.ComplaintSubjectSpecComplaintSubjectComplaint" />
+        </set>
+    </class>
+</hibernate-mapping>

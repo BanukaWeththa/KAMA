@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 5, 2018 12:55:53 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="POJOS.Product" table="product" catalog="PicPick">
+        <id name="idproduct" type="java.lang.Integer">
+            <column name="idproduct" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="cateogry" class="POJOS.Cateogry" fetch="select">
+            <column name="cateogry_idcateogry" not-null="true" />
+        </many-to-one>
+        <many-to-one name="printer" class="POJOS.Printer" fetch="select">
+            <column name="printer_idprinter" not-null="true" />
+        </many-to-one>
+        <property name="productname" type="string">
+            <column name="productname" length="45" />
+        </property>
+        <property name="productcode" type="string">
+            <column name="productcode" length="45" />
+        </property>
+        <property name="productstatus" type="string">
+            <column name="productstatus" length="45" />
+        </property>
+        <property name="productImage" type="string">
+            <column name="productImage" length="500" not-null="true" />
+        </property>
+        <property name="frameStatusIdFrameStatus" type="int">
+            <column name="FrameStatus_idFrameStatus" not-null="true" />
+        </property>
+        <set name="productDeactivates" table="productDeactivate" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="product_idproduct" not-null="true" />
+            </key>
+            <one-to-many class="POJOS.ProductDeactivate" />
+        </set>
+        <set name="productHasAddOns" table="`product_has_Add-On`" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="product_idproduct" not-null="true" />
+            </key>
+            <one-to-many class="POJOS.ProductHasAddOn" />
+        </set>
+        <set name="printerHasProducts" table="printer_has_product" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="product_idproduct" not-null="true" />
+            </key>
+            <one-to-many class="POJOS.PrinterHasProduct" />
+        </set>
+        <set name="productHasSubcategories" table="product_has_subcategory" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="product_idproduct" not-null="true" />
+            </key>
+            <one-to-many class="POJOS.ProductHasSubcategory" />
+        </set>
+    </class>
+</hibernate-mapping>

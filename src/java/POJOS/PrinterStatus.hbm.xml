@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 5, 2018 12:55:53 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="POJOS.PrinterStatus" table="printer_status" catalog="PicPick">
+        <id name="idprinterStatus" type="java.lang.Integer">
+            <column name="idprinter_status" />
+            <generator class="identity" />
+        </id>
+        <property name="printerStatusName" type="string">
+            <column name="printer_statusName" length="45" />
+        </property>
+        <set name="cartItems" table="cartItem" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="printer_status_idprinter_status" not-null="true" />
+            </key>
+            <one-to-many class="POJOS.CartItem" />
+        </set>
+    </class>
+</hibernate-mapping>

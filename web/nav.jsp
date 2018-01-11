@@ -20,15 +20,15 @@
     </head>
     <body>
         <nav class="navbar navbar-default" style="background-color:rgba(255, 255, 255,0.5);margin-bottom: 0px;">
-            <div class="nav-wrapper container navbar-fixed" style="width: 100%;">
+            <div class="nav-wrapper container" style="width: 100%;">
 
-                <ul class="right hide-on-med-and-down navbar-right">
-                    <li><a style="text-decoration: none;" href="index.jsp"><i class="material-icons right" >home</i>Home</a></li>
-                    <li><a style="text-decoration: none;" href="#"><i class="material-icons right" >settings</i>About Us</a></li>
-                    <li><a style="text-decoration: none;" href="#"><i class="material-icons right" >redeem</i>Products</a></li>
-                    <li><a style="text-decoration: none;" href="#"><i class="material-icons right" >call</i>Contact Us</a></li>
-                    <li style=""><a href="login_register.jsp" class="text-white cartI" style="margin-top: 0px;text-decoration: none;"><i class="material-icons right" >person</i>Login/Register</a></li> 
-                    <li><a href="#" class="text-white cartI" style="margin-top: 0px;text-decoration: none;"><i class="material-icons right" >shopping_cart</i>Cart</a></li> 
+                <ul id="nav-pc" class="navtop right hide-on-med-and-down navbar-right">
+                    <li id="PAS"><a style="text-decoration: none;" href="index.jsp"><i class="material-icons right" >home</i>Home</a></li>
+                    <li id="PAS"><a style="text-decoration: none;" href="#"><i class="material-icons right" >settings</i>About Us</a></li>
+                    <li id="PAS"><a style="text-decoration: none;" href="#"><i class="material-icons right" >redeem</i>Products</a></li>
+                    <li id="PAS"><a style="text-decoration: none;" href="#"><i class="material-icons right" >call</i>Contact Us</a></li>
+                    <li id="PAS"><a href="login_register.jsp" class="text-white cartI" style="margin-top: 0px;text-decoration: none;"><i class="material-icons right" >person</i>Login/Register</a></li> 
+                    <li id="PAS"><a href="#" class="text-white cartI" style="margin-top: 0px;text-decoration: none;"><i class="material-icons right" >shopping_cart</i>Cart</a></li> 
 
 
 

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 5, 2018 12:55:53 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="POJOS.Transaction" table="transaction" catalog="PicPick">
+        <id name="idtransaction" type="java.lang.Integer">
+            <column name="idtransaction" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="delivery" class="POJOS.Delivery" fetch="select">
+            <column name="delivery_iddelivery" not-null="true" />
+        </many-to-one>
+        <many-to-one name="transactionStatus" class="POJOS.TransactionStatus" fetch="select">
+            <column name="transaction_status_idtransaction_status" not-null="true" />
+        </many-to-one>
+        <property name="transactionDate" type="timestamp">
+            <column name="transactionDate" length="19" />
+        </property>
+        <property name="transactionCardNo" type="string">
+            <column name="transactionCardNo" length="45" />
+        </property>
+        <property name="transactionCvc" type="string">
+            <column name="transactionCVC" length="45" />
+        </property>
+        <property name="transactionExpireYear" type="string">
+            <column name="transactionExpireYear" length="45" />
+        </property>
+        <property name="transactionExpireMonth" type="string">
+            <column name="transactionExpireMonth" length="45" />
+        </property>
+        <set name="transactionHasCartItems" table="transaction_has_cartItem" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="transaction_idtransaction" not-null="true" />
+            </key>
+            <one-to-many class="POJOS.TransactionHasCartItem" />
+        </set>
+    </class>
+</hibernate-mapping>

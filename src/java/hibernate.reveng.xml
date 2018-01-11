@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="PicPick"/>
+  <table-filter match-name="product_has_subcategory"/>
+  <table-filter match-name="product_has_Add-On"/>
+  <table-filter match-name="user_login"/>
+  <table-filter match-name="cateogry"/>
+  <table-filter match-name="delivery"/>
+  <table-filter match-name="complaintSubjectSpec_complaintSubject_complaint"/>
+  <table-filter match-name="transaction_status"/>
+  <table-filter match-name="printer"/>
+  <table-filter match-name="login_sessions"/>
+  <table-filter match-name="user_type"/>
+  <table-filter match-name="privilages"/>
+  <table-filter match-name="productDeactivate"/>
+  <table-filter match-name="printer_status"/>
+  <table-filter match-name="complaintSubjectSpec_has_complaintSubject"/>
+  <table-filter match-name="complaintSubject"/>
+  <table-filter match-name="user_backup"/>
+  <table-filter match-name="transaction_has_cartItem"/>
+  <table-filter match-name="interfaces"/>
+  <table-filter match-name="FrameType"/>
+  <table-filter match-name="areaPrice"/>
+  <table-filter match-name="product_status"/>
+  <table-filter match-name="product"/>
+  <table-filter match-name="interfaces_status"/>
+  <table-filter match-name="FrameStatus"/>
+  <table-filter match-name="Add-On"/>
+  <table-filter match-name="cartItem_status"/>
+  <table-filter match-name="subcategory"/>
+  <table-filter match-name="cartItem"/>
+  <table-filter match-name="complaint"/>
+  <table-filter match-name="user_type_has_userSpecification"/>
+  <table-filter match-name="userSpecification"/>
+  <table-filter match-name="transaction"/>
+  <table-filter match-name="complaintSubjectSpec"/>
+  <table-filter match-name="user_status"/>
+  <table-filter match-name="Cart"/>
+  <table-filter match-name="printer_has_product"/>
+  <table-filter match-name="zipCode"/>
+</hibernate-reverse-engineering>

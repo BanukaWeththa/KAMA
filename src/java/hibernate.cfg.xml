@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/PicPick?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">mysql</property>
+    <mapping resource="POJOS/ProductDeactivate.hbm.xml"/>
+    <mapping resource="POJOS/UserSpecification.hbm.xml"/>
+    <mapping resource="POJOS/InterfacesStatus.hbm.xml"/>
+    <mapping resource="POJOS/ProductHasAddOn.hbm.xml"/>
+    <mapping resource="POJOS/TransactionStatus.hbm.xml"/>
+    <mapping resource="POJOS/Cateogry.hbm.xml"/>
+    <mapping resource="POJOS/Delivery.hbm.xml"/>
+    <mapping resource="POJOS/CartItemStatus.hbm.xml"/>
+    <mapping resource="POJOS/ComplaintSubjectSpecHasComplaintSubject.hbm.xml"/>
+    <mapping resource="POJOS/Cart.hbm.xml"/>
+    <mapping resource="POJOS/ComplaintSubject.hbm.xml"/>
+    <mapping resource="POJOS/ProductStatus.hbm.xml"/>
+    <mapping resource="POJOS/Product.hbm.xml"/>
+    <mapping resource="POJOS/TransactionHasCartItem.hbm.xml"/>
+    <mapping resource="POJOS/Complaint.hbm.xml"/>
+    <mapping resource="POJOS/ProductHasSubcategory.hbm.xml"/>
+    <mapping resource="POJOS/Transaction.hbm.xml"/>
+    <mapping resource="POJOS/PrinterStatus.hbm.xml"/>
+    <mapping resource="POJOS/AddOn.hbm.xml"/>
+    <mapping resource="POJOS/FrameType.hbm.xml"/>
+    <mapping resource="POJOS/UserTypeHasUserSpecification.hbm.xml"/>
+    <mapping resource="POJOS/UserBackup.hbm.xml"/>
+    <mapping resource="POJOS/Privilages.hbm.xml"/>
+    <mapping resource="POJOS/Subcategory.hbm.xml"/>
+    <mapping resource="POJOS/UserType.hbm.xml"/>
+    <mapping resource="POJOS/UserLogin.hbm.xml"/>
+    <mapping resource="POJOS/Printer.hbm.xml"/>
+    <mapping resource="POJOS/UserStatus.hbm.xml"/>
+    <mapping resource="POJOS/Interfaces.hbm.xml"/>
+    <mapping resource="POJOS/ZipCode.hbm.xml"/>
+    <mapping resource="POJOS/ComplaintSubjectSpec.hbm.xml"/>
+    <mapping resource="POJOS/AreaPrice.hbm.xml"/>
+    <mapping resource="POJOS/FrameStatus.hbm.xml"/>
+    <mapping resource="POJOS/LoginSessions.hbm.xml"/>
+    <mapping resource="POJOS/CartItem.hbm.xml"/>
+    <mapping resource="POJOS/PrinterHasProduct.hbm.xml"/>
+    <mapping resource="POJOS/ComplaintSubjectSpecComplaintSubjectComplaint.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

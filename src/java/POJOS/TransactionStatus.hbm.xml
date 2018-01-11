@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 5, 2018 12:55:53 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="POJOS.TransactionStatus" table="transaction_status" catalog="PicPick">
+        <id name="idtransactionStatus" type="java.lang.Integer">
+            <column name="idtransaction_status" />
+            <generator class="identity" />
+        </id>
+        <property name="transactionStatusName" type="string">
+            <column name="transaction_statusName" length="45" />
+        </property>
+        <set name="transactions" table="transaction" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="transaction_status_idtransaction_status" not-null="true" />
+            </key>
+            <one-to-many class="POJOS.Transaction" />
+        </set>
+    </class>
+</hibernate-mapping>

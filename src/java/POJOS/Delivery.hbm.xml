@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 5, 2018 12:55:53 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="POJOS.Delivery" table="delivery" catalog="PicPick">
+        <id name="iddelivery" type="int">
+            <column name="iddelivery" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="userLogin" class="POJOS.UserLogin" fetch="select">
+            <column name="user_login_iduser_login" not-null="true" />
+        </many-to-one>
+        <property name="deliveryFullName" type="string">
+            <column name="deliveryFullName" length="45" />
+        </property>
+        <property name="deliveryAddNo" type="string">
+            <column name="deliveryAddNo" length="45" />
+        </property>
+        <property name="deliveryAddSt1" type="string">
+            <column name="deliveryAddSt1" length="45" />
+        </property>
+        <property name="deliveryAddSt2" type="string">
+            <column name="deliveryAddSt2" length="45" />
+        </property>
+        <property name="deliveryAddCity" type="string">
+            <column name="deliveryAddCity" length="45" />
+        </property>
+        <property name="zipCodeIdzipCode" type="int">
+            <column name="zipCode_idzipCode" not-null="true" />
+        </property>
+        <property name="deliveryTp1" type="string">
+            <column name="deliveryTp1" length="45" />
+        </property>
+        <property name="deliveryTp2" type="string">
+            <column name="deliveryTp2" length="45" />
+        </property>
+        <set name="transactions" table="transaction" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="delivery_iddelivery" not-null="true" />
+            </key>
+            <one-to-many class="POJOS.Transaction" />
+        </set>
+    </class>
+</hibernate-mapping>

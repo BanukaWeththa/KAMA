@@ -19,7 +19,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        
+
         <footer>
             <div class="container">
                 <div class="row">  
@@ -41,7 +41,7 @@
                     </div>
 
                     <div class="col-md-3 col-sm-6 col-xs-12">
-                        <span class="logo">LOGO</span>
+                        <span class="logo">PicPick</span>
                     </div>
 
                     <div class="col-md-3 col-sm-6 col-xs-12">
@@ -52,15 +52,15 @@
                             </li>
 
                             <li>
-                                <a href="#">About</a>
+                                <a href="#">About Us</a>
                             </li>
 
                             <li>
-                                <a href="#">Blog</a>
+                                <a href="#">Products</a>
                             </li>
 
                             <li>
-                                <a href="#">Gallery </a>
+                                <a href="#">Printers</a>
                             </li>
                         </ul>
                     </div>
@@ -84,13 +84,13 @@
                         <ul class="adress">
                             <span>Adress</span>    
                             <li>
-                                <p>Lorem ipsum dolor sit amet, vero omnis vocibus</p>
+                                <p>No.60, Cinnamon Gardens, Colombo 07</p>
                             </li>
                             <li>
-                                <p>+90 1234 56789</p>
+                                <p>+94 7708 30041</p>
                             </li>
                             <li>
-                                <p>info@gmail.com</p>
+                                <p>PicPick@gmail.com</p>
                             </li>
                         </ul>
                     </div>

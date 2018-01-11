@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 5, 2018 12:55:53 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="POJOS.FrameStatus" table="FrameStatus" catalog="PicPick">
+        <id name="idFrameStatus" type="int">
+            <column name="idFrameStatus" />
+            <generator class="assigned" />
+        </id>
+        <property name="frameStatusName" type="string">
+            <column name="FrameStatusName" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

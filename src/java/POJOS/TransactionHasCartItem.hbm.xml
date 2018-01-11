@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 5, 2018 12:55:53 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="POJOS.TransactionHasCartItem" table="transaction_has_cartItem" catalog="PicPick">
+        <id name="idtransactionHasCartItem" type="java.lang.Integer">
+            <column name="idtransaction_has_cartItem" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="transaction" class="POJOS.Transaction" fetch="select">
+            <column name="transaction_idtransaction" not-null="true" />
+        </many-to-one>
+        <property name="cartItemIdorder" type="int">
+            <column name="cartItem_idorder" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
