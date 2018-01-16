@@ -22,12 +22,12 @@
             <jsp:include page="CSS/index_css.css"/>
             <jsp:include page="CSS/footer.css"/>
         </style>
-      
+
     </head>
     <body>
         <jsp:include page="nav.jsp"/>
 
-        <div class="space-medium">
+        <div class="space-medium" style="margin-top: 5%;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -113,7 +113,7 @@
                                             <label class="control-label required" for="email">Email<sup style="color:red">*</sup></label>
                                             <input id="email" name="email" type="text" class="form-control" placeholder="Enter Email Address">
 
-                                    </div>
+                                        </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
                                         <div class="form-group">
