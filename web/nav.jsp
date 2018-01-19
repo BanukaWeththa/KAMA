@@ -15,11 +15,11 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
+
         <title>JSP Page</title>
     </head>
     <body>
-        <nav class="navbar navbar-default" style="background-color:rgba(255, 255, 255,0.5);margin-bottom: 0px;">
+        <nav class="navbar nav-extended navbar-default" style="background-color:rgba(255, 255, 255,0.5);margin-bottom: 0px;">
             <div class="nav-wrapper container" style="width: 100%;">
 
                 <ul id="nav-pc" class="navtop right hide-on-med-and-down navbar-right">
@@ -45,6 +45,7 @@
                 </ul>
                 <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
             </div>
+
         </nav>
     </body>
 </html>
