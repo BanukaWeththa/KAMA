@@ -19,6 +19,30 @@
             <jsp:include page="CSS/index_css.css"/>
             <jsp:include page="CSS/footer.css"/>
         </style>
+        <style>
+            .parallax { 
+
+
+
+                height: 500px; 
+
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+
+            }
+
+            @media only screen and (max-device-width: 1024px) {
+                .parallax {
+                    background-attachment: scroll;
+                }
+            }
+            body, html {
+                height: 100%;
+            }
+        </style>
     </head>
     <body>
 
@@ -26,8 +50,11 @@
         <jsp:include page="slider.jsp"/>
         <jsp:include page="lowernav.jsp"/>
 
+        <div class="parallax" style="background-image: url('Images/imng_par.jpg')">
 
-        
+
+        </div>
+
 
         <jsp:include page="footer.jsp"/>
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
